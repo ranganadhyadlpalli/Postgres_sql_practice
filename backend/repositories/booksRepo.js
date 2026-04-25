@@ -5,6 +5,7 @@ async function getAllBooks() {
         const result = await pool.query(
             'SELECT * FROM books'
         )
+        return result
     } catch (error) {
         throw error;
     }
